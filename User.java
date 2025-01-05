@@ -1,7 +1,7 @@
 
 /** Represents a user in a social network. A user is characterized by a name,
  *  a list of user names that s/he follows, and the list's size. */
-public class User {
+ public class User {
 
     // Maximum number of users that a user can follow
     static int maxfCount = 10;
