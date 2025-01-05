@@ -10,7 +10,8 @@ public class Network {
         this.userCount = 0;
     }
 
-    /** Creates a network  with some users for testing purposes. */
+    
+    /** Creates a network  with some users for testing purposes.
     public Network(int maxUserCount, boolean gettingStarted) {
         this(maxUserCount);
         users[0] = new User("Foo");
@@ -18,6 +19,8 @@ public class Network {
         users[2] = new User("Baz");
         userCount = 3;
     }
+
+    */
 
     /** Returns the number of users in this network. */
     public int getUserCount() {
