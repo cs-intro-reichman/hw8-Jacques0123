@@ -59,7 +59,7 @@ public class User {
      */
     public boolean follows(String name) {
         for (int i = 0; i < fCount; i++) {
-            if (follows[i].equals(name)) {
+            if (follows[i].equalsIgnoreCase(name)) {
                 return true;
             }
         }
@@ -86,7 +86,7 @@ public class User {
      */
     public boolean removeFollowee(String name) {
         for (int i = 0; i < fCount; i++) {
-            if (follows[i].equals(name)) {
+            if (follows[i].equalsIgnoreCase(name)) {
                 for (int j = i; j < fCount - 1; j++) {
                     follows[j] = follows[j + 1];
                 }
