@@ -1,7 +1,7 @@
 
 /** Represents a user in a social network. A user is characterized by a name,
  *  a list of user names that s/he follows, and the list's size. */
- public class User {
+public class User {
 
     // Maximum number of users that a user can follow
     static int maxfCount = 10;
@@ -23,7 +23,7 @@
      * Creates a user with some followees. The only purpose of this constructor
      * is to allow testing the toString and follows methods, before implementing
      * other methods.
-     
+     */
     public User(String name, boolean gettingStarted) {
         this(name);
         follows[0] = "Foo";
@@ -31,7 +31,6 @@
         follows[2] = "Baz";
         fCount = 3;
     }
-*/
 
     /**
      * Returns the name of this user.
