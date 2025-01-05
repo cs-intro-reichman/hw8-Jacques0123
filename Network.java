@@ -28,12 +28,13 @@ public class Network {
      *  If there is no such user, returns null. */
     public User getUser(String name) {
         for (int i = 0; i < userCount; i++) {
-            if (users[i].getName().equals(name)) {
+            if (users[i].getName().equalsIgnoreCase(name)) {
                 return users[i];
             }
         }
         return null;
     }
+    
 
     /** Adds a new user with the given name to this network.
     *  If the network is full, or the name is already a user, does nothing and returns false.
@@ -55,6 +56,9 @@ public class Network {
         if (user1 == null || user2 == null) {
             return false;
         }
+        if (name1.equalsIgnoreCase(name2)) {
+            return false;
+        }        
         return user1.addFollowee(name2);
     }
 
